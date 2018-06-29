@@ -1,5 +1,5 @@
 server:
-  port: 8000
+  name: server1
 spring:
   application:
     name: gateway-server
@@ -11,4 +11,3 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://regist.server:8100/eureka/
-name: test2
