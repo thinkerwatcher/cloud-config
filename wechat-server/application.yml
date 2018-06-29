@@ -1,8 +1,9 @@
 server:
-  port: 8000
+  port: 8200
 spring:
-  application:
-    name: gateway-server
+  kafka:
+    host: localhost
+    port: 9092
 eureka:      
   instance:
     hostname: ${spring.cloud.client.ipAddress}
@@ -11,4 +12,3 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://regist.server:8100/eureka/
-name: test2
