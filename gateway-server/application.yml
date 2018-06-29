@@ -18,3 +18,4 @@ zuul:
   routes:
     wechat-server:
       path:/wechat/**
+      serviceId: wechat-server
