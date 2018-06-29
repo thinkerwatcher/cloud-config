@@ -17,6 +17,6 @@ eureka:
 zuul:
   routes:
     wechat-server:
-      path:/wechat/**
+      path: /wechat/**
       serviceId: wechat-server
       strip-prefix: false
