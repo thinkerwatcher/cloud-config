@@ -16,7 +16,7 @@ eureka:
       defaultZone: http://regist.server:8100/eureka/
 zuul:
   routes:
-    strip-prefix: true
+    strip-prefix: false
     wechat-server:
       path:/wechat/**
       serviceId: wechat-server
