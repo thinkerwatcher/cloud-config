@@ -1,4 +1,5 @@
 server:
+  port: 8000
   name: server1
 spring:
   application:
