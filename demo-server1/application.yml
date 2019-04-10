@@ -15,7 +15,7 @@ eureka:
 feign:
   hystrix:
     enabled: true
-demo-server1:
+demo-server2:
   ribbon:
     ReadTimeout: 1000
     ConnectTimeout: 1000
