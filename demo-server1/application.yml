@@ -21,3 +21,8 @@ demo-server2:
     ConnectTimeout: 1000
     MaxAutoRetries: 1
     MaxAutoRetriesNextServer: 1
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
