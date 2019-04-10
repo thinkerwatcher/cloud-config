@@ -12,7 +12,9 @@ spring:
         - id: demo1
           uri: lb://demo-server1
           predicates:
-          - Path=/test1/**
+          - Path=/demo1/**
+          filters:
+          - StripPrefix=1
 eureka:      
   instance:
     preferIpAddress: true
