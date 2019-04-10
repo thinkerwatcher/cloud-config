@@ -1,0 +1,19 @@
+server:
+  port: 5000
+
+eureka:
+  instance:
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
+    health-check-url-path: /actuator/health 
+    prefer-ip-address: true
+  client:
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://regist.server:8100/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
