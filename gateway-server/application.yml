@@ -1,6 +1,6 @@
 server:
   port: 8000
-  name: server2
+  name: gateway-server
 spring:
   application:
     name: gateway-server
