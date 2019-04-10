@@ -8,7 +8,6 @@ spring:
     baseUrl: http://localhost:9999/
 eureka:      
   instance:
-    hostname: ${spring.cloud.client.ipAddress}
     instanceId: ${eureka.instance.hostname}:${server.port}
     preferIpAddress: true
   client:
