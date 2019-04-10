@@ -1,0 +1,26 @@
+server:
+  port: 8100
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://regist.server:${server.port}/eureka/
+  server:
+    use-read-only-response-cache: false
+    eviction-interval-timer-in-ms: 3000
+ribbon:
+  ServerListRefreshInterval: 5000
+logging:
+  level:
+    com:
+      netflix:
+        eureka:
+          registry:
+            AbstractInstanceRegistry: ERROR
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
