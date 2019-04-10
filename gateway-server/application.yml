@@ -6,6 +6,13 @@ spring:
     name: gateway-server
   zipkin:
     baseUrl: http://localhost:9999/
+  cloud:
+    gateway:
+      routes:
+        - id: demo1
+          uri: lb://demo-server1
+          predicates:
+          - Path=/demo1/
 eureka:      
   instance:
     preferIpAddress: true
