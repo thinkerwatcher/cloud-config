@@ -17,7 +17,7 @@ feign:
     enabled: true
 demo-server1:
   ribbon:
-    ReadTimeout: 3000
-    ConnectTimeout: 3000
+    ReadTimeout: 1000
+    ConnectTimeout: 1000
     MaxAutoRetries: 1
     MaxAutoRetriesNextServer: 1
