@@ -12,7 +12,7 @@ spring:
         - id: demo1
           uri: lb://demo-server1
           predicates:
-          - Path=/test1/
+          - Path=/test1/**
 eureka:      
   instance:
     preferIpAddress: true
