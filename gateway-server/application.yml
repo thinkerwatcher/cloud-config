@@ -15,6 +15,12 @@ spring:
           - Path=/demo1/**
           filters:
           - StripPrefix=1
+        - id: demo2
+          uri: lb://demo-server2
+          predicates:
+          - Path=/demo2/**
+          filters:
+          - StripPrefix=1
 eureka:      
   instance:
     preferIpAddress: true
