@@ -1,11 +1,9 @@
 server:
-  port: 8001
-  name: demo-server1
+  port: 8100
+  name: demoServer1
 spring:
   application:
     name: demo-server1
-  zipkin:
-    baseUrl: http://localhost:9999/
 eureka:      
   instance:
     preferIpAddress: true
