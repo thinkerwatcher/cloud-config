@@ -6,9 +6,6 @@ spring:
     name: demo-server1
   zipkin:
     base-url: http://localhost:8099
-    sleuth:
-      sampler:
-        percentage: 1.0
 eureka:      
   instance:
     preferIpAddress: true
