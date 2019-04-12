@@ -28,3 +28,5 @@ management:
     web:
       exposure:
         include: '*'
+logging:
+  path: /opt/logs/demo1/
