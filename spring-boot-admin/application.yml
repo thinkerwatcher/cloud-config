@@ -16,13 +16,3 @@ management:
     web:
       exposure:
         include: "*"
-spring:
-  security:
-    user:
-      name: user
-      password: 123456
-eureka:
-  instance:
-    metadata-map:
-      user.name: user         
-      user.password: 123456
