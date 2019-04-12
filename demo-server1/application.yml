@@ -6,14 +6,6 @@ spring:
     name: demo-server1
   zipkin:
     base-url: http://localhost:8099
-eureka:      
-  instance:
-    preferIpAddress: true
-    lease-expiration-duration-in-seconds: 15
-    lease-renewal-interval-in-seconds: 5
-  client:
-    serviceUrl:
-      defaultZone: http://regist.server:8100/eureka/
 feign:
   hystrix:
     enabled: true
@@ -23,10 +15,5 @@ demo-server2:
     ConnectTimeout: 1000
     MaxAutoRetries: 1
     MaxAutoRetriesNextServer: 1
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
 logging:
   path: /opt/logs/demo1/
