@@ -11,9 +11,18 @@ eureka:
     registryFetchIntervalSeconds: 5
     serviceUrl:
       defaultZone: http://regist.server:8100/eureka/
-
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+spring:
+  security:
+    user:
+      name: user
+      password: 123456
+eureka:
+  instance:
+    metadata-map:
+      user.name: user         
+      user.password: 123456
