@@ -21,3 +21,16 @@ spring:
           - Path=/demo2/**
           filters:
           - StripPrefix=1
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+eureka:      
+  instance:
+    preferIpAddress: true
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
+  client:
+    serviceUrl:
+      defaultZone: http://regist.server:8100/eureka/
